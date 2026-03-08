@@ -469,7 +469,7 @@ body.single-scene #sceneListToggle {
 /* ✅ Taller mobile header */
 .mobile .info-hotspot .info-hotspot-header {
   width: 50px;
-  height: 68px;
+  height: 84px;
   border-radius: 34px;
 }
 
@@ -499,7 +499,7 @@ body.single-scene #sceneListToggle {
 /* ✅ Match icon wrapper to taller header */
 .info-hotspot .info-hotspot-icon-wrapper {
   width: 48px;
-  height: 64px;
+  height: 84px;
 }
 
 .mobile .info-hotspot .info-hotspot-icon-wrapper {
@@ -519,7 +519,7 @@ body.single-scene #sceneListToggle {
   left: 48px;
   top: 0;
   width: 0;
-  height: 64px;
+  height: 84px;
   padding: 0;
   overflow: hidden;
   -webkit-transition: width 0s 0.4s,
@@ -560,7 +560,7 @@ body.single-scene #sceneListToggle {
   position: absolute;
   left: 452px;
   top: 0;
-  height: 64px;
+  height: 84px;
   width: 48px;
   border-top-right-radius: 6px;
   background-color: rgb(78,88,104);
@@ -609,7 +609,7 @@ body.single-scene #sceneListToggle {
   width: 500px;
   height: auto;
   max-height: 260px;
-  top: 64px;
+  top: 84px;
   left: 0;
   padding: 14px;
   background-color: rgb(58,68,84);
