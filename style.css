@@ -684,16 +684,16 @@ body.single-scene #sceneListToggle {
               visibility 0s 0s;
 }
 
-/* ✅ Slightly shorter gray title area */
+/* ✅ Gray title area a bit shorter, but still tall enough for wrapped title */
 .info-hotspot-modal .info-hotspot-header {
   position: absolute;
   top: 60px;
   left: 10px;
   right: 10px;
   width: auto;
-  height: 88px;
+  height: 100px;
   background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.72);
+  background-color: rgba(103,115,131,0.8);
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out 0.2s;
   transition: opacity 0.3s ease-in-out 0.2s;
@@ -705,27 +705,27 @@ body.single-scene #sceneListToggle {
   transition: opacity 0.3s ease-in-out 0.2s;
 }
 
-/* ✅ Keep left icon area proportional */
+/* ✅ Keep icon columns proportional to header height */
 .info-hotspot-modal .info-hotspot-icon-wrapper {
   width: 50px;
-  height: 88px;
+  height: 100px;
 }
 
 .info-hotspot-modal .info-hotspot-icon {
-  width: 64%;
-  height: 64%;
-  margin: 18%;
+  width: 72%;
+  height: 72%;
+  margin: 14%;
 }
 
-/* ✅ Slightly shorter title area */
+/* ✅ Title area fits wrapped Burmese text better */
 .info-hotspot-modal .info-hotspot-title-wrapper {
   position: absolute;
   top: 0;
   left: 50px;
   right: 50px;
   width: auto;
-  height: 88px;
-  padding: 8px 12px;
+  height: 100px;
+  padding: 10px 12px;
   overflow: hidden;
 }
 
@@ -735,39 +735,39 @@ body.single-scene #sceneListToggle {
 
 .info-hotspot-modal .info-hotspot-title {
   display: block;
-  line-height: 1.18em;
+  line-height: 1.2em;
   white-space: normal;
   word-break: break-word;
   overflow-wrap: anywhere;
-  font-size: 0.92em;
+  font-size: 0.95em;
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
 }
 
-/* ✅ Slightly shorter X area */
+/* ✅ X area matches height and looks more balanced */
 .info-hotspot-modal .info-hotspot-close-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   width: 50px;
-  height: 88px;
+  height: 100px;
   background-color: rgb(78,88,104);
-  background-color: rgba(78,88,104,0.72);
+  background-color: rgba(78,88,104,0.8);
   cursor: pointer;
 }
 
 .info-hotspot-modal .info-hotspot-close-icon {
-  width: 62%;
-  height: 62%;
-  margin: 19%;
+  width: 68%;
+  height: 68%;
+  margin: 16%;
 }
 
-/* ✅ Move text up to sit right below the shorter title area */
+/* ✅ Text starts right below the shorter gray title area */
 .info-hotspot-modal .info-hotspot-text {
   position: absolute;
-  top: 148px;
+  top: 160px;
   bottom: 10px;
   left: 10px;
   right: 10px;
