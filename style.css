@@ -456,7 +456,7 @@ body.single-scene #sceneListToggle {
 /* ✅ Taller header */
 .info-hotspot .info-hotspot-header {
   width: 48px;
-  height: 64px;
+  height: 84px;
   border-radius: 32px;
   background-color: rgb(103,115,131);
   cursor: pointer;
