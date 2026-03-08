@@ -53,7 +53,7 @@ a, a:hover, a:active, a:visited {
 
 /* ✅ Give mobile more height so 2-line title fits nicely */
 .mobile #titleBar {
-  height: 50px;   /* align with buttons */
+  height: 50px;
   right: 50px;
 }
 
@@ -80,44 +80,28 @@ body.multiple-scenes.mobile #titleBar {
   width: 100%;
   height: 100%;
   padding: 6px 10px;
-
   font-size: clamp(14px, 2.2vw, 22px);
   font-weight: 300;
   line-height: 1.15;
-
   background-color: rgba(58,68,84,0.8);
-
-  /* wrap + clamp */
   white-space: normal;
   overflow: hidden;
   text-overflow: unset;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;   /* desktop can show up to 2 lines */
+  -webkit-line-clamp: 2;
   line-clamp: 2;
-
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
 }
 
-/* Mobile: keep title bar short and aligned, so show 1 line */
-.mobile #titleBar .sceneName {
-  padding: 6px 10px;
-  -webkit-line-clamp: 2;   /* ✅ align height with buttons */
-  line-clamp: 2;
-}
-
-  -moz-user-select: text;
-  -webkit-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
-/* Mobile fine-tuning */
+/* Mobile: keep title bar short and aligned */
 .mobile #titleBar .sceneName {
   padding: 8px 10px;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 /* ---------- Fullscreen Toggle ---------- */
@@ -158,7 +142,6 @@ body.fullscreen-enabled #fullscreenToggle {
 
 #fullscreenToggle .icon.on { display: none; }
 #fullscreenToggle .icon.off { display: block; }
-
 #fullscreenToggle.enabled .icon.on { display: block; }
 #fullscreenToggle.enabled .icon.off { display: none; }
 
@@ -205,7 +188,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #autorotateToggle .icon.on { display: none; }
 #autorotateToggle .icon.off { display: block; }
-
 #autorotateToggle.enabled .icon.on { display: block; }
 #autorotateToggle.enabled .icon.off { display: none; }
 
@@ -250,7 +232,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #sceneListToggle .icon.on { display: none; }
 #sceneListToggle .icon.off { display: block; }
-
 #sceneListToggle.enabled .icon.on { display: block; }
 #sceneListToggle.enabled .icon.off { display: none; }
 
@@ -368,7 +349,7 @@ body.single-scene #sceneListToggle {
 .link-hotspot-tooltip {
   position: absolute;
   left: 100%;
-  top: 14px; /* ( 60 - (16 + 2*8) ) / 2 */
+  top: 14px;
   margin-left: 3px;
   font-size: 16px;
   max-width: 300px;
@@ -396,7 +377,7 @@ body.single-scene #sceneListToggle {
 }
 
 .mobile .link-hotspot {
-  top: 19px; /* ( 70 - (16 + 2*8) ) / 2 */
+  top: 19px;
 }
 
 .no-touch .link-hotspot:hover .link-hotspot-tooltip {
@@ -433,30 +414,10 @@ body.single-scene #sceneListToggle {
   opacity: 1;
 }
 
-/* ✅ Taller header */
-/* ---------- Info hotspot ---------- */
-
-.info-hotspot {
-  line-height: 1.2em;
-  opacity: 0.9;
-  -webkit-transition: opacity 0.2s 0.2s;
-  transition: opacity 0.2s 0.2s;
-}
-
-.no-touch .info-hotspot:hover {
-  opacity: 1;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
-.info-hotspot.visible {
-  opacity: 1;
-}
-
-/* ✅ Taller header */
+/* ✅ Desktop title shade taller so Burmese top marks do not get clipped */
 .info-hotspot .info-hotspot-header {
   width: 48px;
-  height: 84px;
+  height: 92px;
   border-radius: 32px;
   background-color: rgb(103,115,131);
   cursor: pointer;
@@ -466,14 +427,13 @@ body.single-scene #sceneListToggle {
               border-radius 0.3s ease-in-out 0.5s;
 }
 
-/* ✅ Taller mobile header */
+/* ✅ Mobile hotspot header */
 .mobile .info-hotspot .info-hotspot-header {
   width: 50px;
   height: 84px;
   border-radius: 34px;
 }
 
-/* Expanded widths kept the same as your last version */
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover {
   width: 500px;
   border-radius: 6px;
@@ -496,15 +456,14 @@ body.single-scene #sceneListToggle {
               border-radius 0.3s ease-in-out;
 }
 
-/* ✅ Match icon wrapper to taller header */
 .info-hotspot .info-hotspot-icon-wrapper {
   width: 48px;
-  height: 84px;
+  height: 92px;
 }
 
 .mobile .info-hotspot .info-hotspot-icon-wrapper {
   width: 50px;
-  height: 68px;
+  height: 84px;
 }
 
 .info-hotspot .info-hotspot-icon {
@@ -513,13 +472,12 @@ body.single-scene #sceneListToggle {
   margin: 5%;
 }
 
-/* ✅ Match title wrapper height to taller header */
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute;
   left: 48px;
   top: 0;
   width: 0;
-  height: 84px;
+  height: 92px;
   padding: 0;
   overflow: hidden;
   -webkit-transition: width 0s 0.4s,
@@ -528,7 +486,6 @@ body.single-scene #sceneListToggle {
               padding 0s 0.4s;
 }
 
-/* ✅ Title area widened so it reaches right up to the X area */
 .desktop .info-hotspot.visible .info-hotspot-title-wrapper,
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover .info-hotspot-title-wrapper {
   width: 404px;
@@ -549,18 +506,18 @@ body.single-scene #sceneListToggle {
 .info-hotspot .info-hotspot-title {
   display: inline-block;
   vertical-align: middle;
+  line-height: 1.25em;
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
 }
 
-/* ✅ Close button moved to the true far-right edge of the 500px header */
 .info-hotspot .info-hotspot-close-wrapper {
   position: absolute;
   left: 452px;
   top: 0;
-  height: 84px;
+  height: 92px;
   width: 48px;
   border-top-right-radius: 6px;
   background-color: rgb(78,88,104);
@@ -602,14 +559,12 @@ body.single-scene #sceneListToggle {
   margin: 15%;
 }
 
-/* ✅ Text box starts below the taller header */
-/* ✅ Same width as the title/header area */
 .info-hotspot .info-hotspot-text {
   position: absolute;
   width: 500px;
   height: auto;
   max-height: 260px;
-  top: 84px;
+  top: 92px;
   left: 0;
   padding: 14px;
   background-color: rgb(58,68,84);
@@ -631,7 +586,6 @@ body.single-scene #sceneListToggle {
               -webkit-transform 0.3s,
               transform 0.3s,
               visibility 0s 0.3s;
-
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
@@ -684,8 +638,7 @@ body.single-scene #sceneListToggle {
               visibility 0s 0s;
 }
 
-/* ✅ Make the light shaded title area taller downward */
-/* ✅ Make the light shaded title area taller downward */
+/* ✅ Mobile shaded title area */
 .info-hotspot-modal .info-hotspot-header {
   position: absolute;
   top: 60px;
@@ -724,7 +677,7 @@ body.single-scene #sceneListToggle {
   transform: translate(-50%, -50%);
 }
 
-/* ✅ Make title area taller so full title can wrap */
+/* ✅ Mobile title area */
 .info-hotspot-modal .info-hotspot-title-wrapper {
   position: absolute;
   top: 0;
@@ -779,7 +732,6 @@ body.single-scene #sceneListToggle {
   transform: translate(-50%, -50%);
 }
 
-/* ✅ Push text area down so it starts below the taller title box */
 .info-hotspot-modal .info-hotspot-text {
   position: absolute;
   top: 180px;
@@ -793,7 +745,6 @@ body.single-scene #sceneListToggle {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
-
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
@@ -845,35 +796,26 @@ body.view-control-buttons .viewControlButton { display: block; }
    (and still allows up to 2 lines without breaking centering) */
 @media (max-width: 768px) {
 
-  /* keep title bar aligned with buttons */
   .mobile #titleBar {
     height: 50px;
     right: 50px;
   }
 
   .mobile #titleBar .sceneName {
-    /* override clamp layout that breaks centering */
     display: flex !important;
     -webkit-box-orient: initial !important;
     -webkit-line-clamp: unset !important;
-
-    align-items: center !important;      /* vertical center ✅ */
-    justify-content: center !important;  /* horizontal center ✅ */
+    align-items: center !important;
+    justify-content: center !important;
     text-align: center !important;
-
     width: 100%;
     height: 100%;
-
     padding: 8px 12px !important;
     line-height: 1.7 !important;
-
-    /* allow wrapping, but don't cut mid-word */
     white-space: normal !important;
     word-break: keep-all !important;
     overflow-wrap: anywhere !important;
-
-    /* limit to ~2 lines while still centered */
     overflow: hidden !important;
     max-height: calc(1.7em * 2 + 2px) !important;
   }
-
+}
