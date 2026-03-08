@@ -684,13 +684,14 @@ body.single-scene #sceneListToggle {
               visibility 0s 0s;
 }
 
+/* ✅ Mobile title info box taller, but stays at same top position */
 .info-hotspot-modal .info-hotspot-header {
   position: absolute;
   top: 60px;
   left: 10px;
   right: 10px;
   width: auto;
-  height: 50px;
+  height: 90px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
   opacity: 0;
@@ -704,9 +705,10 @@ body.single-scene #sceneListToggle {
   transition: opacity 0.3s ease-in-out 0.2s;
 }
 
+/* ✅ Match icon height to taller header */
 .info-hotspot-modal .info-hotspot-icon-wrapper {
   width: 50px;
-  height: 50px;
+  height: 90px;
 }
 
 .info-hotspot-modal .info-hotspot-icon {
@@ -715,13 +717,14 @@ body.single-scene #sceneListToggle {
   margin: 5%;
 }
 
+/* ✅ Match title area height to taller header */
 .info-hotspot-modal .info-hotspot-title-wrapper {
   position: absolute;
   top: 0;
   left: 50px;
   right: 50px;
   width: auto;
-  height: 50px;
+  height: 90px;
   padding: 0 10px;
 }
 
@@ -741,12 +744,13 @@ body.single-scene #sceneListToggle {
   user-select: text;
 }
 
+/* ✅ Match X area height to taller header */
 .info-hotspot-modal .info-hotspot-close-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   width: 50px;
-  height: 50px;
+  height: 90px;
   background-color: rgb(78,88,104);
   background-color: rgba(78,88,104,0.8);
   cursor: pointer;
@@ -758,9 +762,10 @@ body.single-scene #sceneListToggle {
   margin: 15%;
 }
 
+/* ✅ Move text lower so it starts below the taller title box */
 .info-hotspot-modal .info-hotspot-text {
   position: absolute;
-  top: 110px;
+  top: 150px;
   bottom: 10px;
   left: 10px;
   right: 10px;
@@ -783,7 +788,6 @@ body.single-scene #sceneListToggle {
   -webkit-transition: opacity 0.3s ease-in-out 0.4s;
   transition: opacity 0.3s ease-in-out 0.4s;
 }
-
 /* ---------- View control buttons ---------- */
 
 .viewControlButton {
