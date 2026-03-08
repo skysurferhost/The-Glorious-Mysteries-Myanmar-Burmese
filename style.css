@@ -434,8 +434,6 @@ body.single-scene #sceneListToggle {
 }
 
 /* ✅ Taller header */
-/* ---------- Info hotspot ---------- */
-
 .info-hotspot .info-hotspot-header {
   width: 48px;
   height: 64px;
@@ -448,15 +446,16 @@ body.single-scene #sceneListToggle {
               border-radius 0.3s ease-in-out 0.5s;
 }
 
+/* ✅ Taller mobile header */
 .mobile .info-hotspot .info-hotspot-header {
-  width: 58px;
+  width: 50px;
   height: 68px;
   border-radius: 34px;
 }
 
-/* Make expanded header wider */
+/* Expanded widths kept the same as your last version */
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover {
-  width: 420px;
+  width: 500px;
   border-radius: 6px;
   -webkit-transition: width 0.3s ease-in-out,
                       border-radius 0.3s ease-in-out;
@@ -466,7 +465,7 @@ body.single-scene #sceneListToggle {
 
 .desktop .info-hotspot.visible .info-hotspot-header,
 .desktop.no-touch .info-hotspot.visible .info-hotspot-header:hover {
-  width: 420px;
+  width: 500px;
   border-radius: 6px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -477,16 +476,24 @@ body.single-scene #sceneListToggle {
               border-radius 0.3s ease-in-out;
 }
 
+/* ✅ Match icon wrapper to taller header */
 .info-hotspot .info-hotspot-icon-wrapper {
   width: 48px;
   height: 64px;
 }
 
 .mobile .info-hotspot .info-hotspot-icon-wrapper {
-  width: 58px;
+  width: 50px;
   height: 68px;
 }
 
+.info-hotspot .info-hotspot-icon {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+/* ✅ Match title wrapper height to taller header */
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute;
   left: 48px;
@@ -501,7 +508,6 @@ body.single-scene #sceneListToggle {
               padding 0s 0.4s;
 }
 
-/* Title area width = total header width - icon width */
 .desktop .info-hotspot.visible .info-hotspot-title-wrapper,
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover .info-hotspot-title-wrapper {
   width: 324px;
@@ -512,6 +518,23 @@ body.single-scene #sceneListToggle {
               padding 0s 0.4s;
 }
 
+.info-hotspot .info-hotspot-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.info-hotspot .info-hotspot-title {
+  display: inline-block;
+  vertical-align: middle;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* ✅ Close button aligned to taller header */
 .info-hotspot .info-hotspot-close-wrapper {
   position: absolute;
   left: 420px;
@@ -537,17 +560,39 @@ body.single-scene #sceneListToggle {
               visibility 0s 0.6s;
 }
 
+.desktop .info-hotspot.visible .info-hotspot-close-wrapper {
+  visibility: visible;
+  -ms-transform: perspective(200px) rotateY(0deg);
+  -webkit-transform: perspective(200px) rotateY(0deg);
+  transform: perspective(200px) rotateY(0deg);
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      visibility 0s 0s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              visibility 0s 0s;
+}
+
+.info-hotspot .info-hotspot-close-icon {
+  width: 70%;
+  height: 70%;
+  margin: 15%;
+}
+
+/* ✅ Text box starts below the taller header */
 .info-hotspot .info-hotspot-text {
   position: absolute;
-  width: 468px;   /* same total width as header + close button */
-  min-height: 260px;
+  width: 500px;
+  height: auto;
   max-height: 260px;
   top: 64px;
   left: 0;
   padding: 14px;
   background-color: rgb(58,68,84);
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   overflow-y: auto;
   visibility: hidden;
   -ms-transform: perspective(200px) rotateX(-89.999deg);
@@ -570,6 +615,7 @@ body.single-scene #sceneListToggle {
   -ms-user-select: text;
   user-select: text;
 }
+
 .desktop .info-hotspot.visible .info-hotspot-text {
   visibility: visible;
   -ms-transform: perspective(200px) rotateX(0deg);
