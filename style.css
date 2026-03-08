@@ -685,6 +685,7 @@ body.single-scene #sceneListToggle {
 }
 
 /* ✅ Make the light shaded title area taller downward */
+/* ✅ Make the light shaded title area taller downward */
 .info-hotspot-modal .info-hotspot-header {
   position: absolute;
   top: 60px;
@@ -705,16 +706,22 @@ body.single-scene #sceneListToggle {
   transition: opacity 0.3s ease-in-out 0.2s;
 }
 
-/* ✅ Match icon area height */
+/* ✅ Match icon area height and center the i icon */
 .info-hotspot-modal .info-hotspot-icon-wrapper {
   width: 50px;
-  height: 100px;
+  height: 120px;
+  position: relative;
 }
 
 .info-hotspot-modal .info-hotspot-icon {
-  width: 70%;
-  height: 70%;
-  margin: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 62%;
+  height: 62%;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* ✅ Make title area taller so full title can wrap */
@@ -749,22 +756,27 @@ body.single-scene #sceneListToggle {
   user-select: text;
 }
 
-/* ✅ Match X area height */
+/* ✅ Match X area height and center the X icon */
 .info-hotspot-modal .info-hotspot-close-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   width: 50px;
-  height: 100px;
+  height: 120px;
   background-color: rgb(78,88,104);
   background-color: rgba(78,88,104,0.8);
   cursor: pointer;
 }
 
 .info-hotspot-modal .info-hotspot-close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 62%;
   height: 62%;
-  margin: 15%;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* ✅ Push text area down so it starts below the taller title box */
