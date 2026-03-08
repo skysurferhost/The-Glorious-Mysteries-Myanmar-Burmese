@@ -434,6 +434,26 @@ body.single-scene #sceneListToggle {
 }
 
 /* ✅ Taller header */
+/* ---------- Info hotspot ---------- */
+
+.info-hotspot {
+  line-height: 1.2em;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.2s 0.2s;
+  transition: opacity 0.2s 0.2s;
+}
+
+.no-touch .info-hotspot:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.info-hotspot.visible {
+  opacity: 1;
+}
+
+/* ✅ Taller header */
 .info-hotspot .info-hotspot-header {
   width: 48px;
   height: 64px;
