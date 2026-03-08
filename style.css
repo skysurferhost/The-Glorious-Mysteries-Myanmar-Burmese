@@ -725,12 +725,14 @@ body.single-scene #sceneListToggle {
   right: 50px;
   width: auto;
   height: 82px;
-  padding: 0 12px;
+  padding: 8px 12px 0 12px;
   overflow: hidden;
 
   display: flex;
-  align-items: center;   /* vertical center */
+  align-items: flex-start;
+  justify-content: flex-start;
 }
+
 
 .info-hotspot-modal .info-hotspot-title-wrapper:before {
   content: none;
@@ -739,6 +741,10 @@ body.single-scene #sceneListToggle {
 .info-hotspot-modal .info-hotspot-title {
   display: block;
   width: 100%;
+  line-heig.info-hotspot-modal .info-hotspot-title {
+  display: block;
+  width: 100%;
+  margin: 0;
   line-height: 1.16em;
   white-space: normal;
   word-break: break-word;
