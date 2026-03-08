@@ -508,9 +508,10 @@ body.single-scene #sceneListToggle {
               padding 0s 0.4s;
 }
 
+/* ✅ Title area widened so it reaches right up to the X area */
 .desktop .info-hotspot.visible .info-hotspot-title-wrapper,
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover .info-hotspot-title-wrapper {
-  width: 324px;
+  width: 404px;
   padding: 0 8px;
   -webkit-transition: width 0s 0.4s,
                       padding 0s 0.4s;
@@ -534,10 +535,10 @@ body.single-scene #sceneListToggle {
   user-select: text;
 }
 
-/* ✅ Close button aligned to taller header */
+/* ✅ Close button moved to the true far-right edge of the 500px header */
 .info-hotspot .info-hotspot-close-wrapper {
   position: absolute;
-  left: 420px;
+  left: 452px;
   top: 0;
   height: 64px;
   width: 48px;
@@ -582,6 +583,7 @@ body.single-scene #sceneListToggle {
 }
 
 /* ✅ Text box starts below the taller header */
+/* ✅ Same width as the title/header area */
 .info-hotspot .info-hotspot-text {
   position: absolute;
   width: 500px;
@@ -662,9 +664,10 @@ body.single-scene #sceneListToggle {
               visibility 0s 0s;
 }
 
+/* ✅ Phone view title/header moved higher */
 .info-hotspot-modal .info-hotspot-header {
   position: absolute;
-  top: 60px;
+  top: 25px;
   left: 10px;
   right: 10px;
   width: auto;
@@ -736,9 +739,10 @@ body.single-scene #sceneListToggle {
   margin: 15%;
 }
 
+/* ✅ Phone view text panel also moved higher to match */
 .info-hotspot-modal .info-hotspot-text {
   position: absolute;
-  top: 110px;
+  top: 75px;
   bottom: 10px;
   left: 10px;
   right: 10px;
