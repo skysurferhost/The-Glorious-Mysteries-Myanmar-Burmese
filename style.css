@@ -712,8 +712,8 @@ body.single-scene #sceneListToggle {
 }
 
 .info-hotspot-modal .info-hotspot-icon {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
   margin: 5%;
 }
 
@@ -762,8 +762,8 @@ body.single-scene #sceneListToggle {
 }
 
 .info-hotspot-modal .info-hotspot-close-icon {
-  width: 45%;
-  height: 45%;
+  width: 62%;
+  height: 62%;
   margin: 15%;
 }
 
