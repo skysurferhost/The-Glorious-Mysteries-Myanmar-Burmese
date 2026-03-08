@@ -725,8 +725,11 @@ body.single-scene #sceneListToggle {
   right: 50px;
   width: auto;
   height: 82px;
-  padding: 7px 12px;
+  padding: 0 12px;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;   /* vertical center */
 }
 
 .info-hotspot-modal .info-hotspot-title-wrapper:before {
@@ -735,6 +738,7 @@ body.single-scene #sceneListToggle {
 
 .info-hotspot-modal .info-hotspot-title {
   display: block;
+  width: 100%;
   line-height: 1.16em;
   white-space: normal;
   word-break: break-word;
