@@ -563,7 +563,7 @@ body.single-scene #sceneListToggle {
   width: 500px;
   height: auto;
   max-height: 260px;
-  top: 72px;
+  top: 82px;
   left: 0;
   padding: 14px;
   background-color: rgb(58,68,84);
@@ -721,7 +721,7 @@ body.single-scene #sceneListToggle {
 
 .info-hotspot-modal .info-hotspot-text {
   position: absolute;
-  top: 148px;
+  top: 168px;
   bottom: 10px;
   left: 10px;
   right: 10px;
