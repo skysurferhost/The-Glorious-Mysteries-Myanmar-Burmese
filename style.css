@@ -664,10 +664,9 @@ body.single-scene #sceneListToggle {
               visibility 0s 0s;
 }
 
-/* ✅ Phone view title/header moved higher */
 .info-hotspot-modal .info-hotspot-header {
   position: absolute;
-  top: 25px;
+  top: 60px;
   left: 10px;
   right: 10px;
   width: auto;
@@ -739,10 +738,9 @@ body.single-scene #sceneListToggle {
   margin: 15%;
 }
 
-/* ✅ Phone view text panel also moved higher to match */
 .info-hotspot-modal .info-hotspot-text {
   position: absolute;
-  top: 75px;
+  top: 110px;
   bottom: 10px;
   left: 10px;
   right: 10px;
